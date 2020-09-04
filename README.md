@@ -15,3 +15,14 @@ To make failure detection accurate and stable I have redesigned and refactored t
 
 #### Result
 The new version of the Failure Detector make the entire project more stable and reliable and saved a lot of engineering hours and money, also it was a critical component for the first major release of the project to make the project Generally Available
+
+
+### Details
+ - [Failure Detector Mechanism](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/main/java/org/corfudb/infrastructure/RemoteMonitoringService.java#L328) - correctWrongEpochs, empty slot, failure detection, healing, state transfer
+ 
+ - [ClusterAdvisor](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/main/java/org/corfudb/infrastructure/management/CompleteGraphAdvisor.java#L55) decision maker on top of succesful connection
+ 
+ - [ClusterGraph](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/main/java/org/corfudb/infrastructure/management/failuredetector/ClusterGraph.java#L98) NodeStates, collection states from the cluster.
+ 
+ - [ClusterGraphTest](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/test/java/org/corfudb/infrastructure/management/ClusterGraphTest.java#L28) and [ClusterGraphAdvisorTest](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/test/java/org/corfudb/infrastructure/management/CompleteGraphAdvisorTest.java#L22) ability to emulate entire an cluster state.
+ 
