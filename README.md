@@ -26,3 +26,4 @@ The new version of the Failure Detector make the entire project more stable and 
  
  - [ClusterGraphTest](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/test/java/org/corfudb/infrastructure/management/ClusterGraphTest.java#L28) and [ClusterGraphAdvisorTest](https://github.com/CorfuDB/CorfuDB/blob/f75d756b830ecdfad196f29025f1c012a0eee09e/infrastructure/src/test/java/org/corfudb/infrastructure/management/CompleteGraphAdvisorTest.java#L22) ability to emulate entire an cluster state.
  
+ - [Universe Framework, Integration Testing](https://github.com/CorfuDB/CorfuDB/blob/785f8ba21792fbaf816de60e90df0996ea2de1f1/it/src/test/java/org/corfudb/universe/scenario/OneNodeDownIT.java#L39) to test the whole functionality
