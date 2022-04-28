@@ -1,6 +1,6 @@
 # Failure-detector
 
-Deep dive topic will be about implementing and redesign a Failure Detector in CorfuDb.
+Deep dive topic will be about implementing and redesign Failure Detector mechansm in CorfuDb.
 
 #### Problem:
 The Failure Detector mechanism is responsible for the detection of node failures or crashes, 
