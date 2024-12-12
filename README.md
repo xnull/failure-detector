@@ -1,7 +1,5 @@
 # Failure-detector
 
-Deep dive topic will be about implementing and redesign Failure Detector mechansm in CorfuDb.
-
 #### Problem:
 The Failure Detector mechanism is responsible for the detection of node failures or crashes, 
 the previous version struggles to detect failures accurately, also sometimes it made incorrect decisions that make a node in the cluster unresponsive when the node actually healthy.
